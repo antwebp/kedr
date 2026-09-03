@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Таежный Дар - кедровая шишка и масло из уральской тайги</title>
+<meta name="description" content="Кедровая шишка, кедровое масло и кедровый орех. 100% натурально из уральской тайги. Прямые поставки по всей России.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ SVG SPRITE ============ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-cedar" viewBox="0 0 32 32">
+    <path d="M16 2.5c-1 1.6-1.6 3-1.8 4.6M16 2.5c1 1.6 1.6 3 1.8 4.6M16 2.5v27" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M14.2 7.1C11.6 8.5 9.8 10.4 8.9 13M17.8 7.1c2.6 1.4 4.4 3.3 5.3 5.9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M13.2 12.1c-3.2.5-5.6 2-7.2 4.6M18.8 12.1c3.2.5 5.6 2 7.2 4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M12.4 17.4c-3.6.2-6.4 1.6-8.4 4.4M19.6 17.4c3.6.2 6.4 1.6 8.4 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M11.9 22.6c-3.4.4-6 1.9-7.9 4.4M20.1 22.6c3.4.4 6 1.9 7.9 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M10 29.5h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="12.9" cy="10.2" r="1.15" fill="currentColor"/>
+    <circle cx="19.1" cy="10.2" r="1.15" fill="currentColor"/>
+    <circle cx="10.9" cy="15.3" r="1.15" fill="currentColor"/>
+    <circle cx="21.1" cy="15.3" r="1.15" fill="currentColor"/>
+    <circle cx="13.4" cy="20.3" r="1.15" fill="currentColor"/>
+    <circle cx="18.6" cy="20.3" r="1.15" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24">
+    <path d="M12 3 7 10h2.4L6 15h4v3.5h4V15h4l-3.4-5H17L12 3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-sprig" viewBox="0 0 100 130">
+    <path d="M30 4C44 34 56 70 54 126" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <g transform="translate(33 14) rotate(-15)"><path d="M0 0C-8-6-16-7-24-4M0 0C-4-9 0-17 6-22M0 0C6-8 14-11 22-9"/></g>
+      <g transform="translate(38 26) rotate(-30)"><path d="M0 0C-8-6-16-7-24-4M0 0C-4-9 0-17 6-22M0 0C6-8 14-11 22-9"/></g>
+      <g transform="translate(44 40) rotate(-40)"><path d="M0 0C-8-6-16-7-24-4M0 0C-4-9 0-17 6-22M0 0C6-8 14-11 22-9"/></g>
+      <g transform="translate(49 56) rotate(-50)"><path d="M0 0C-8-6-16-7-24-4M0 0C-4-9 0-17 6-22M0 0C6-8 14-11 22-9"/></g>
+      <g transform="translate(53 72) rotate(-55)"><path d="M0 0C-8-6-16-7-24-4M0 0C-4-9 0-17 6-22M0 0C6-8 14-11 22-9"/></g>
+      <g transform="translate(55 90) rotate(-60)"><path d="M0 0C-8-6-16-7-24-4M0 0C-4-9 0-17 6-22M0 0C6-8 14-11 22-9"/></g>
+      <g transform="translate(55 108) rotate(-62)"><path d="M0 0C-8-6-16-7-24-4M0 0C-4-9 0-17 6-22M0 0C6-8 14-11 22-9"/></g>
+    </g>
+  </symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24">
+    <path d="M5 19C5 10 10 5 19.5 4.5 20 14 15 19 6.5 19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5 19c3-5.5 7-9 11-11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24">
+    <path d="M6.6 3.8 9 6.2c.5.5.5 1.2.2 1.8L8.1 9.8a1.3 1.3 0 0 0 .2 1.5l4.4 4.4c.4.4 1 .5 1.5.2l1.8-1.1c.6-.3 1.3-.3 1.8.2l2.4 2.4c.5.5.5 1.4 0 1.9l-1.3 1.3c-.8.8-2 .9-3 .5-2.5-1-4.9-2.6-7-4.7-2.1-2.1-3.7-4.5-4.7-7-.4-1-.3-2.2.5-3l1.3-1.3c.5-.5 1.4-.5 1.9 0Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-shield-sprout" viewBox="0 0 48 48">
+    <path d="M24 5 9 10v11c0 9.5 6.2 16.6 15 20 8.8-3.4 15-10.5 15-20V10L24 5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M24 32v-9M24 23c0-4 2.6-6.6 7-7 0 4.3-2.5 7-7 7ZM24 26c0-3.3-2.1-5.4-5.7-5.8 0 3.6 2 5.8 5.7 5.8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-bolt" viewBox="0 0 48 48">
+    <path d="M27 5 12 27h9l-2 16L36 20h-9l2-15Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-lotus" viewBox="0 0 48 48">
+    <path d="M24 12c-3 3.2-4.5 7-4.5 11 0 4.4 1.8 8 4.5 10.6 2.7-2.6 4.5-6.2 4.5-10.6 0-4-1.5-7.8-4.5-11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M13 20c-.4 5.4 1.2 10 4.6 13.6M35 20c.4 5.4-1.2 10-4.6 13.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M6 26c2.6 6.6 9 10.6 18 10.6S39.4 32.6 42 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-heart" viewBox="0 0 48 48">
+    <path d="M24 40S6 29.5 6 17.8C6 11.9 10.4 8 15.5 8c3.6 0 6.9 2 8.5 5.4C25.6 10 28.9 8 32.5 8 37.6 8 42 11.9 42 17.8 42 29.5 24 40 24 40Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-cone" viewBox="0 0 48 48">
+    <path d="M24 6c-6.5 3.5-10.5 9.7-10.5 17.4C13.5 32 17.8 38.5 24 42c6.2-3.5 10.5-10 10.5-18.6C34.5 15.7 30.5 9.5 24 6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M16.5 15c4.8 2.4 10.2 2.4 15 0M14.5 23c6 3 13 3 19 0M17 31c4.4 2.2 9.6 2.2 14 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-drop" viewBox="0 0 48 48">
+    <path d="M24 6c6 7.4 10 13.4 10 19a10 10 0 0 1-20 0c0-5.6 4-11.6 10-19Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M18.5 26a5.5 5.5 0 0 0 4.5 5.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-shield-check" viewBox="0 0 48 48">
+    <path d="M24 5 9 10v11c0 9.5 6.2 16.6 15 20 8.8-3.4 15-10.5 15-20V10L24 5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="m17.5 23.5 4.5 4.5 8.5-8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-search" viewBox="0 0 48 48">
+    <circle cx="21" cy="21" r="11" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="m29.5 29.5 9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-box" viewBox="0 0 48 48">
+    <path d="m24 6 16 8v20l-16 8-16-8V14l16-8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M8 14l16 8 16-8M24 22v20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-truck" viewBox="0 0 48 48">
+    <path d="M4 12h24v20H4zM28 18h8l6 7v7h-14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="12" cy="35" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="35" cy="35" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path d="m8 12.2 2.7 2.7L16.3 9.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24">
+    <path d="m6 9.5 6 5.5 6-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-eco" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M24 34V20M24 24c0-4.4 2.8-7.2 7.6-7.6 0 4.8-2.8 7.6-7.6 7.6ZM24 29c0-3.7-2.3-6-6.3-6.4 0 4 2.3 6.4 6.3 6.4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-gost" viewBox="0 0 48 48">
+    <path d="M24 5 28 9h5.5L35 14.5 39.5 16 38 21l4 3-4 3 1.5 5-4.5 1.5L33.5 39H28L24 43 20 39h-5.5L13 33.5 8.5 32 10 27l-4-3 4-3-1.5-5L13 14.5 14.5 9H20l4-4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="18" y="17" width="12" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="i-family" viewBox="0 0 48 48">
+    <path d="M24 8c-4 3.8-6 8.2-6 13 0 5.4 2.3 9.8 6 12.6 3.7-2.8 6-7.2 6-12.6 0-4.8-2-9.2-6-13Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M24 33.6V40M14 40h20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24">
+    <rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24">
+    <path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 0 1 12 3.5 6.5 6.5 0 0 1 18.5 10c0 5.3-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    <circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="i-vk" viewBox="0 0 24 24">
+    <path d="M4.8 7.5c.3 6 3.4 10 9.4 10h1.6v-3.6c1.4.2 2.4 1.2 3 2.4l.8 1.2H23c-.6-2-2-3.6-3.4-4.6 1.2-1.2 2.6-3 3-4.6h-2.8c-.6 1.6-1.9 3.3-3.4 4V7.9h-2.9v5.3C11.8 11.6 10.5 9.5 10 7.5H7c.4 2.4 1.7 4.6 3 6-1.6 1.7-3.4 3.2-5.2 4Z" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24">
+    <path d="m20.5 4.5-17 6.8c-.8.3-.8 1.2 0 1.5l4.2 1.4 1.6 5c.2.7 1 .8 1.5.3l2.3-2.2 4.4 3.2c.5.4 1.3.1 1.4-.6l3-14.2c.2-.9-.6-1.5-1.4-1.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M8 14.5 19 7l-9.5 8.6-.4 3.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-max" viewBox="0 0 24 24">
+    <path d="M12 3.5c-4.7 0-8.5 3.4-8.5 7.6 0 2.4 1.2 4.6 3.1 5.9L6 21l3.6-1.8c.8.2 1.6.3 2.4.3 4.7 0 8.5-3.4 8.5-8.4S16.7 3.5 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#hero" aria-label="Таежный Дар — на главную">
+      <svg class="logo__icon" aria-hidden="true"><use href="#i-cedar"/></svg>
+      <span class="logo__text">
+        <span class="logo__name">Таежный Дар</span>
+        <span class="logo__tagline">сила природы Урала</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="#hero">Главная</a>
+      <a class="nav__link" href="#products">Продукция</a>
+      <a class="nav__link" href="#process">Как мы работаем</a>
+      <a class="nav__link" href="#why-us">О нас</a>
+      <a class="nav__link" href="#lead">Контакты</a>
+    </nav>
+    <div class="header__contacts">
+      <svg class="header__phone-icon" aria-hidden="true"><use href="#i-phone"/></svg>
+      <div class="header__phone-text">
+        <a class="header__phone" href="tel:+79956751855">+7 995 675 18 55</a>
+      </div>
+      <button class="header__cta" type="button" data-open-lead aria-label="Оставить заявку">
+        <svg aria-hidden="true"><use href="#i-leaf"/></svg>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <nav aria-label="Мобильная навигация">
+    <a href="#hero">Главная</a>
+    <a href="#products">Продукция</a>
+    <a href="#process">Как мы работаем</a>
+    <a href="#why-us">О нас</a>
+    <a href="#lead">Контакты</a>
+  </nav>
+  <a class="mobile-menu__phone" href="tel:+79956751855">+7 995 675 18 55</a>
+  <button class="btn btn--primary mobile-menu__cta" type="button" data-open-lead>
+    <svg aria-hidden="true"><use href="#i-leaf"/></svg>Оставить заявку
+  </button>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <img class="hero__photo" src="assets/img/hero-product.jpg" alt="Кедровые шишки в деревянной чаше и бутылка кедрового масла на фоне уральской тайги">
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">
+          <svg class="hero__eyebrow-icon" aria-hidden="true"><use href="#i-tree"/></svg>
+          <span><b>100% натурально</b> из уральской тайги</span>
+        </p>
+        <h1 class="hero__title">
+          Кедровая<br>шишка<br><span class="accent">и&nbsp;масло</span>
+        </h1>
+        <p class="hero__desc">Природная польза для всей семьи.<br>Прямые поставки из чистых лесов Урала.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" type="button" data-open-lead>
+            <svg aria-hidden="true"><use href="#i-leaf"/></svg>Оставить заявку
+          </button>
+          <a class="btn btn--ghost" href="tel:+79956751855">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить нам
+          </a>
+        </div>
+        <ul class="hero__benefits">
+          <li>
+            <svg aria-hidden="true"><use href="#i-cone"/></svg>
+            <span>Собираем<br>вручную</span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-leaf"/></svg>
+            <span>Без добавок<br>и консервантов</span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-drop"/></svg>
+            <span>Холодный<br>отжим масла</span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-shield-check"/></svg>
+            <span>Контроль<br>качества</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS ============ -->
+  <section class="benefits" id="benefits">
+    <svg class="benefits__branch" aria-hidden="true"><use href="#i-sprig"/></svg>
+    <svg class="benefits__nuts" aria-hidden="true"><use href="#i-sprig"/></svg>
+    <div class="container benefits__grid">
+      <div class="benefits__intro">
+        <p class="eyebrow eyebrow--dark">Природная польза</p>
+        <h2 class="h2 h2--dark">Для здоровья<br>и бодрости</h2>
+        <p class="benefits__text">Кедровая шишка и масло содержат уникальный комплекс веществ, который помогает укреплять иммунитет, поддерживать энергию и&nbsp;заботиться о здоровье каждый день.</p>
+      </div>
+      <ul class="benefits__list">
+        <li class="benefit">
+          <svg class="benefit__icon" aria-hidden="true"><use href="#i-shield-sprout"/></svg>
+          <h3 class="benefit__title">Иммунитет</h3>
+          <p class="benefit__desc">Укрепляет защитные силы организма</p>
+        </li>
+        <li class="benefit">
+          <svg class="benefit__icon" aria-hidden="true"><use href="#i-bolt"/></svg>
+          <h3 class="benefit__title">Энергия</h3>
+          <p class="benefit__desc">Источник витаминов и&nbsp;полезных веществ</p>
+        </li>
+        <li class="benefit">
+          <svg class="benefit__icon" aria-hidden="true"><use href="#i-lotus"/></svg>
+          <h3 class="benefit__title">Красота</h3>
+          <p class="benefit__desc">Поддерживает здоровье кожи и волос</p>
+        </li>
+        <li class="benefit">
+          <svg class="benefit__icon" aria-hidden="true"><use href="#i-heart"/></svg>
+          <h3 class="benefit__title">Долголетие</h3>
+          <p class="benefit__desc">Забота о здоровье на долгие годы</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="products" id="products">
+    <svg class="products__branch" aria-hidden="true"><use href="#i-sprig"/></svg>
+    <div class="container">
+      <p class="eyebrow">Наша продукция</p>
+      <h2 class="h2">Выберите свой продукт</h2>
+      <div class="products__grid">
+        <article class="product-card">
+          <button class="product-card__media" type="button" data-product="cones" aria-label="Кедровая шишка — подробнее">
+            <img src="assets/img/product-cones.jpg" alt="Кедровые шишки в деревянной чаше">
+          </button>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Кедровая шишка</h3>
+            <p class="product-card__desc">Отборные шишки для&nbsp;здоровья и&nbsp;долголетия</p>
+            <p class="product-card__price">от 450 ₽<span>за 500 г</span></p>
+            <button class="product-card__link" type="button" data-product="cones">Подробнее
+              <svg aria-hidden="true" viewBox="0 0 28 16"><path d="M1 8h24m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </article>
+        <article class="product-card">
+          <button class="product-card__media" type="button" data-product="oil" aria-label="Кедровое масло — подробнее">
+            <img src="assets/img/product-oil.jpg" alt="Бутылка кедрового масла с кедровыми шишками">
+          </button>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Кедровое масло</h3>
+            <p class="product-card__desc">Холодный отжим первого&nbsp;отжима</p>
+            <p class="product-card__price">от 850 ₽<span>за 100 мл</span></p>
+            <button class="product-card__link" type="button" data-product="oil">Подробнее
+              <svg aria-hidden="true" viewBox="0 0 28 16"><path d="M1 8h24m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </article>
+        <article class="product-card">
+          <button class="product-card__media" type="button" data-product="nuts" aria-label="Кедровый орех — подробнее">
+            <img src="assets/img/product-nuts.jpg" alt="Кедровый орех в деревянной чаше">
+          </button>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Кедровый орех</h3>
+            <p class="product-card__desc">Ядро ореха высшего сорта, богатое витаминами</p>
+            <p class="product-card__price">от 700 ₽<span>за 200 г</span></p>
+            <button class="product-card__link" type="button" data-product="nuts">Подробнее
+              <svg aria-hidden="true" viewBox="0 0 28 16"><path d="M1 8h24m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="process__forest" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow eyebrow--dark">Как мы доставляем пользу тайги</p>
+      <h2 class="h2 h2--dark">От сбора до вашего стола</h2>
+      <ol class="process__steps">
+        <li class="step">
+          <div class="step__circle"><svg aria-hidden="true"><use href="#i-cone"/></svg></div>
+          <span class="step__num">01</span>
+          <h3 class="step__title">Сбор вручную</h3>
+          <p class="step__desc">Собираем шишку в&nbsp;экологически чистых лесах Урала</p>
+        </li>
+        <li class="step">
+          <div class="step__circle"><svg aria-hidden="true"><use href="#i-search"/></svg></div>
+          <span class="step__num">02</span>
+          <h3 class="step__title">Тщательный отбор</h3>
+          <p class="step__desc">Выбираем только крепкие и&nbsp;зрелые шишки</p>
+        </li>
+        <li class="step">
+          <div class="step__circle"><svg aria-hidden="true"><use href="#i-drop"/></svg></div>
+          <span class="step__num">03</span>
+          <h3 class="step__title">Переработка</h3>
+          <p class="step__desc">Производим масло холодным отжимом и&nbsp;очищаем орех</p>
+        </li>
+        <li class="step">
+          <div class="step__circle"><svg aria-hidden="true"><use href="#i-shield-check"/></svg></div>
+          <span class="step__num">04</span>
+          <h3 class="step__title">Контроль качества</h3>
+          <p class="step__desc">Проверяем каждый этап производства в&nbsp;своей лаборатории</p>
+        </li>
+        <li class="step">
+          <div class="step__circle"><svg aria-hidden="true"><use href="#i-box"/></svg></div>
+          <span class="step__num">05</span>
+          <h3 class="step__title">Упаковка</h3>
+          <p class="step__desc">Фасуем в&nbsp;экологичную упаковку, сохраняющую свежесть и&nbsp;пользу</p>
+        </li>
+        <li class="step">
+          <div class="step__circle"><svg aria-hidden="true"><use href="#i-truck"/></svg></div>
+          <span class="step__num">06</span>
+          <h3 class="step__title">Доставка</h3>
+          <p class="step__desc">Бережно доставляем по&nbsp;всей России в&nbsp;кратчайшие сроки</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="why" id="why-us">
+    <img class="why__photo" src="assets/img/whyus-hands.jpg" alt="Руки, держащие свежие кедровые шишки">
+    <div class="container why__grid">
+      <div class="why__content">
+        <p class="eyebrow">Почему выбирают нас</p>
+        <h2 class="h2">Мы сохраняем<br>чистоту природы</h2>
+        <ul class="why__list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Собираем в труднодоступных районах Урала</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Без химии, ароматизаторов и ГМО</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Собственное производство полного цикла</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Бережное отношение к природе и людям</li>
+        </ul>
+      </div>
+      <div class="why__metrics">
+        <div class="metric">
+          <span class="metric__num">10+</span>
+          <span class="metric__label">лет опыта<br>работаем с 2013 года</span>
+        </div>
+        <div class="metric">
+          <span class="metric__num">5000+</span>
+          <span class="metric__label">довольных клиентов<br>по всей России</span>
+        </div>
+        <div class="metric">
+          <span class="metric__num">100%</span>
+          <span class="metric__label">натуральный состав<br>без добавок</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="faq__forest" aria-hidden="true"></div>
+    <div class="container faq__grid">
+      <div class="faq__intro">
+        <p class="eyebrow eyebrow--dark">Вопросы и ответы</p>
+        <h2 class="h2 h2--dark">Часто спрашивают</h2>
+        <svg class="faq__sprig" aria-hidden="true"><use href="#i-sprig"/></svg>
+        <p class="faq__text">Мы собрали ответы на самые популярные вопросы, чтобы вам было проще сделать выбор.</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq-item is-open">
+          <button class="faq-item__head" type="button" aria-expanded="true">
+            <span class="faq-item__icon" aria-hidden="true"></span>
+            <span class="faq-item__question">Как хранить кедровую шишку?</span>
+            <svg class="faq-item__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-item__panel">
+            <div class="faq-item__body">
+              <p>Храните шишку в сухом, проветриваемом помещении при температуре от +5 до +20°C. Избегайте прямых солнечных лучей и&nbsp;высокой влажности. Срок хранения — до 2&nbsp;лет.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__head" type="button" aria-expanded="false">
+            <span class="faq-item__icon" aria-hidden="true"></span>
+            <span class="faq-item__question">Есть ли добавки и консерванты в продукции?</span>
+            <svg class="faq-item__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-item__panel">
+            <div class="faq-item__body">
+              <p>Нет. Вся продукция на 100% натуральная: без сахара, консервантов, ароматизаторов и&nbsp;ГМО. В каждой партии — только кедровые орехи, шишки и&nbsp;масло холодного отжима, что подтверждено протоколами испытаний.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__head" type="button" aria-expanded="false">
+            <span class="faq-item__icon" aria-hidden="true"></span>
+            <span class="faq-item__question">Какая упаковка и срок хранения?</span>
+            <svg class="faq-item__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-item__panel">
+            <div class="faq-item__body">
+              <p>Фасуем в крафт-пакеты с zip-застёжкой, масло — в тёмное стекло, чтобы сохранить аромат и витамины. Орех хранится до 6&nbsp;месяцев, масло — до 12&nbsp;месяцев, шишки — до 2&nbsp;лет при правильных условиях.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__head" type="button" aria-expanded="false">
+            <span class="faq-item__icon" aria-hidden="true"></span>
+            <span class="faq-item__question">Какой способ оплаты доступен?</span>
+            <svg class="faq-item__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-item__panel">
+            <div class="faq-item__body">
+              <p>Оплатите заказ картой онлайн при оформлении или при получении. Для юридических лиц доступен безналичный расчёт с&nbsp;закрывающими документами.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__head" type="button" aria-expanded="false">
+            <span class="faq-item__icon" aria-hidden="true"></span>
+            <span class="faq-item__question">Как оформить заказ и получить доставку?</span>
+            <svg class="faq-item__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-item__panel">
+            <div class="faq-item__body">
+              <p>Оставьте заявку на сайте или позвоните по номеру +7&nbsp;995&nbsp;675&nbsp;18&nbsp;55 — менеджер уточнит состав заказа и подберёт удобный способ доставки. Отправляем по всей России Почтой России и&nbsp;СДЭК, а&nbsp;также транспортными компаниями — выберем оптимальный вариант по срокам и&nbsp;стоимости. По Екатеринбургу — курьером на&nbsp;следующий день.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__head" type="button" aria-expanded="false">
+            <span class="faq-item__icon" aria-hidden="true"></span>
+            <span class="faq-item__question">Можно ли вернуть товар?</span>
+            <svg class="faq-item__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-item__panel">
+            <div class="faq-item__body">
+              <p>Да. Если товар не подошёл или повредился при доставке, мы вернём деньги или заменим продукцию. Принимаем возврат в течение 14&nbsp;дней с момента получения — достаточно сохранить упаковку.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="cta" id="lead">
+    <img class="cta__photo" src="assets/img/cta-product.jpg" alt="Кедровое масло и шишки в чаше на фоне тайги">
+    <div class="container">
+      <div class="cta__card">
+        <p class="eyebrow">Готовы к заказу?</p>
+        <h2 class="h2">Оставьте заявку<br>и мы свяжемся с вами</h2>
+        <p class="cta__desc">Поможем подобрать продукт, ответим на вопросы и&nbsp;оформим быстрый заказ.</p>
+        <form class="lead-form" id="leadForm" novalidate>
+          <div class="field">
+            <label class="field__label" for="name">Ваше имя</label>
+            <input class="field__input" type="text" id="name" name="name" placeholder="Введите ваше имя" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label class="field__label" for="phone">Телефон</label>
+            <input class="field__input" type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" autocomplete="tel" required>
+          </div>
+          <button class="btn btn--primary btn--submit" type="submit">
+            <svg aria-hidden="true"><use href="#i-leaf"/></svg><span>Отправить заявку</span>
+          </button>
+          <p class="lead-form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="#hero">
+          <svg class="logo__icon" aria-hidden="true"><use href="#i-cedar"/></svg>
+          <span class="logo__text">
+            <span class="logo__name">Таежный Дар</span>
+            <span class="logo__tagline">сила природы Урала</span>
+          </span>
+        </a>
+        <p class="footer__about">Натуральные продукты из кедра для&nbsp;здоровья, энергии и&nbsp;долголетия вашей семьи.</p>
+        <div class="footer__socials">
+          <a href="https://vk.com" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg aria-hidden="true"><use href="#i-vk"/></svg></a>
+          <a href="https://telegram.org" target="_blank" rel="noopener" aria-label="Телеграм"><svg aria-hidden="true"><use href="#i-tg"/></svg></a>
+          <a href="https://max.ru" target="_blank" rel="noopener" aria-label="Мессенджер Max"><svg aria-hidden="true"><use href="#i-max"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col footer__contacts">
+        <h3 class="footer__heading">Контакты</h3>
+        <a class="footer__contact" href="tel:+79956751855">
+          <svg aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>+7 995 675 18 55</span>
+        </a>
+        <a class="footer__contact" href="mailto:info@taizhny-dar.ru">
+          <svg aria-hidden="true"><use href="#i-mail"/></svg>
+          <span>info@taizhny-dar.ru</span>
+        </a>
+        <p class="footer__contact">
+          <svg aria-hidden="true"><use href="#i-pin"/></svg>
+          <span>г. Екатеринбург,<br>ул. Лесная, 23</span>
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Таежный Дар. Все права защищены.</p>
+      <div class="footer__bottom-links">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="terms.html">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PRODUCT MODAL ============ -->
+<div class="modal" id="productModal" hidden role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__window modal__window--product" role="document">
+    <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal__media"><img id="productModalImg" src="assets/img/product-cones.jpg" alt=""></div>
+    <div class="modal__body">
+      <p class="eyebrow" id="productModalEyebrow">Наша продукция</p>
+      <h3 class="modal__title" id="productModalTitle">Кедровая шишка</h3>
+      <p class="modal__text" id="productModalText"></p>
+      <p class="modal__price" id="productModalPrice">от 450 ₽<span>за 500 г</span></p>
+      <button class="btn btn--primary modal__cta" type="button" data-open-lead>Оставить заявку</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LEAD MODAL ============ -->
+<div class="modal" id="leadModal" hidden role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__window modal__window--lead" role="document">
+    <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal__body">
+      <p class="eyebrow">Заявка</p>
+      <h3 class="modal__title" id="leadModalTitle">Оставьте заявку</h3>
+      <p class="modal__text">Укажите имя и&nbsp;телефон — перезвоним в&nbsp;течение 15&nbsp;минут, ответим на&nbsp;вопросы и&nbsp;оформим заказ.</p>
+      <form class="lead-form" id="leadModalForm" novalidate>
+        <div class="field">
+          <label class="field__label" for="modalName">Ваше имя</label>
+          <input class="field__input" type="text" id="modalName" name="name" placeholder="Иван" autocomplete="name">
+        </div>
+        <div class="field">
+          <label class="field__label" for="modalPhone">Телефон</label>
+          <input class="field__input" type="tel" id="modalPhone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+        </div>
+        <button class="btn btn--primary btn--submit" type="submit"><span>Отправить заявку</span></button>
+        <p class="lead-form__status" id="leadModalStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
