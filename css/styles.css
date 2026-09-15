@@ -717,9 +717,23 @@ a.footer__contact:hover{color:var(--text-white)}
   display:flex;justify-content:space-between;align-items:center;gap:16px;
   font-size:13px;color:var(--text-muted);
 }
+.footer__bottom-left{display:flex;align-items:center;gap:32px}
 .footer__bottom-links{display:flex;gap:32px}
 .footer__bottom-links a{color:var(--text-muted);transition:color .18s ease}
 .footer__bottom-links a:hover{color:var(--text-white)}
+.footer__credit{
+  white-space:nowrap;
+  color:var(--text-muted);
+  transition:color .18s ease;
+}
+.footer__credit span{
+  color:var(--cedar-lime-bright);
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.footer__credit:hover{color:var(--text-white)}
+.footer__credit:hover span{color:var(--text-white)}
 
 /* ============================================================
    MODALS
@@ -902,7 +916,9 @@ a.footer__contact:hover{color:var(--text-white)}
   .footer__contact svg{width:19px;height:19px;margin-top:0}
   .footer__contact em{font-size:12px}
   .footer__bottom{margin-top:36px;flex-direction:column;align-items:stretch;gap:0}
-  .footer__bottom > p{padding:2px 0 14px}
+  .footer__bottom-left{display:block}
+  .footer__bottom-left > p{padding:2px 0 14px}
+  .footer__credit{padding:14px 0 2px}
   .footer__bottom-links{display:block;width:100%}
   .footer__bottom-links a{
     display:block;
@@ -1029,7 +1045,9 @@ a.footer__contact:hover{color:var(--text-white)}
   .footer__contact svg{width:19px;height:19px;margin-top:0}
   .footer__contact em{font-size:12px}
   .footer__bottom{margin-top:34px;flex-direction:column;align-items:stretch;gap:0}
-  .footer__bottom > p{padding:2px 0 14px}
+  .footer__bottom-left{display:block}
+  .footer__bottom-left > p{padding:2px 0 14px}
+  .footer__credit{padding:14px 0 2px}
   .footer__bottom-links{display:block;width:100%}
   .footer__bottom-links a{
     display:block;
